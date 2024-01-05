@@ -12,15 +12,15 @@
             <h1>Luis Bueno</h1>
             <h2>Data Science Student</h2>
             <div class = "social-items">
-                <a class = "social" href = "">
+                <a class = "social" href = "https://github.com/LuisHDBueno">
                     <img src = "../../img/github.jpg" alt = "github">
                 </a>
-                <a class = "social" href = "">
+                <a class = "social" href = "https://www.linkedin.com/in/luishenriquedominguesbueno">
                     <img src = "../../img/linkedin.png" alt = "linkedin">
                 </a>
-                <a class = "social" href = "">
+                <a class = "social" href = "http://lattes.cnpq.br/0954254869760823">
                     <img src = "../../img/lattes.png" alt = "lattes">
-            </a>
+                </a>
             </div>
         </div>
         <div class = "contact">
@@ -52,6 +52,26 @@
         </div>
     </div>
     <main>
-        <img class = "background" src = "img/profile-photo.jpg" alt = "background">
+        <nav>
+            <ul>
+                <li><button class="menu-button" id="about" data-state="active" onclick="openMain('about')">About</button></li>
+                <li><button class="menu-button" id="resume" data-state="inactive" onclick="openMain('resume')">Resume</button></li>
+                <li><button class="menu-button" id="projects" data-state="inactive" onclick="openMain('projects')">Projects</button></li>
+                <li><button class="menu-button" id="history" data-state="inactive" onclick="openMain('history')">History</button></li>
+            </ul>
+        </nav>
+        <div class="main-inner" id="about" data-state="active">
+            <h1>About</h1>
+        </div>
+        <div class="main-inner" id="resume" data-state="inactive">
+            <h1>Resume</h1>
+        </div>
+        <div class="main-inner" id="projects" data-state="inactive">
+            <h1>Projects</h1>
+        </div>
+        <div class="main-inner" id="history" data-state="inactive">
+            <h1>History</h1>
+        </div>
     </main>
+    <script src = "../js/script.js"></script>
 </body>
