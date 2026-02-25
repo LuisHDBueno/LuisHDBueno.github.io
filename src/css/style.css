@@ -324,10 +324,34 @@ main{
                 line-height: 150px;
             }
 
-            main #about li img{
-                width: 150px;
-                border-radius: 10px;
-                vertical-align: middle;
+            main #about ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            main #about li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 120px;
+                width: 120px;
+                background-color: #1E1F22;
+                border-radius: 12px;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            main #about li {
+                transition: 0.2s ease-in-out;
+            }
+
+            main #about li:hover {
+                transform: translateY(-5px);
+                box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
+            }
+
+            main #about li i {
+                font-size: 50px;
             }
 
             /* Resume */
@@ -342,5 +366,7 @@ main{
             }
 
             /* Projects */
-
+            .technologies i {
+                font-size: 40px;
+            }
 }
